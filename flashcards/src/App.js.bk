@@ -1,0 +1,28 @@
+import './App.css';
+import 'bulma/css/bulma.min.css'
+import {useState} from "react";
+
+function App() {
+    const [flip, setFlip] = useState(false);
+
+    return (<div className="container">
+        <div className="card main-card" onClick={() => setFlip(!flip)}>
+            <header className="card-header">
+                <p className="card-header-title">
+                    Card header
+                </p>
+                <button className="card-header-icon" aria-label="more options">
+                <span className="icon">
+                    <i className="arrow-right" aria-hidden="true"></i>
+                </span>
+                </button>
+            </header>
+
+            <div className="card-content">
+                {flip ? "title" : "description"}
+            </div>
+        </div>
+    </div>);
+}
+
+export default App;
