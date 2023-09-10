@@ -3,7 +3,8 @@
 }
 
 body {
-  /*background-color: aliceblue;*/
+  background-color: aliceblue;
+  min-height: 100vh;
 }
 
 .arrow-right,
@@ -43,7 +44,7 @@ body {
   min-height: 35em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
+  /*margin-top: 5%;*/
   display: flex;
   justify-content: center;
   align-items: center;
